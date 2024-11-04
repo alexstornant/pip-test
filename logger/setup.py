@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # Read requirements from requirements.txt
 with open("requirements.txt") as f:
@@ -7,7 +7,7 @@ with open("requirements.txt") as f:
 setup(
     name="magnavision",
     version="0.1",
-    packages=['logger'],
+    packages=find_packages(),
     install_requires=requirements,  # Add dependencies if needed
     description="desc: magnavision",
     author="Alex",
