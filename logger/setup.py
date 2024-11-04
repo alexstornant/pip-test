@@ -7,12 +7,12 @@ with open("requirements.txt") as f:
 setup(
     name="magnavision",
     version="0.1",
-    packages=requirements,
-    install_requires=[],  # Add dependencies if needed
+    packages=find_packages(),
+    install_requires=requirements,  # Add dependencies if needed
     description="desc: magnavision",
     author="Alex",
     author_email="stornant.alex@gmail.com",
-    url="https://github.com/yourusername/pip-test",
+    url="https://github.com/alexstornant/pip-test/",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
